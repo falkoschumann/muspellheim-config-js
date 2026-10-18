@@ -8,55 +8,58 @@ import headersPlugin from "eslint-plugin-headers";
 import globals from "globals";
 import ts from "typescript-eslint";
 
-export const base = defineConfig([
-  globalIgnores([
-    "build/**",
-    "coverage/**",
-    "dist/**",
-    "coverage-e2e/**",
-    "playwright-report/**",
-    "test-results/**",
-  ]),
-  {
-    extends: [js.configs.recommended, ts.configs.recommended, prettierConfig],
-    files: ["**/*.{js,jsx,mjs,cjs,ts,tsx}"],
-    languageOptions: {
-      ecmaVersion: 2023,
-      globals: {
-        ...globals.es2023,
-        ...globals.browser,
-      },
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
+export const base = ({
+  fileHeader = "Copyright (c) (year) Falko Schumann. MIT license.",
+} = {}) =>
+  defineConfig([
+    globalIgnores([
+      "build/**",
+      "coverage/**",
+      "dist/**",
+      "coverage-e2e/**",
+      "playwright-report/**",
+      "test-results/**",
+    ]),
+    {
+      extends: [js.configs.recommended, ts.configs.recommended, prettierConfig],
+      files: ["**/*.{js,jsx,mjs,cjs,ts,tsx}"],
+      languageOptions: {
+        ecmaVersion: 2023,
+        globals: {
+          ...globals.es2023,
+          ...globals.browser,
         },
-      },
-    },
-    plugins: {
-      headers: headersPlugin,
-    },
-    rules: {
-      "headers/header-format": [
-        "error",
-        {
-          source: "string",
-          style: "line",
-          content: "Copyright (c) (year) Falko Schumann. MIT license.",
-          patterns: {
-            year: {
-              pattern: "\\d{4}",
-              defaultValue: String(new Date().getFullYear()),
-            },
+        parserOptions: {
+          ecmaFeatures: {
+            jsx: true,
           },
-          trailingNewlines: 2,
         },
-      ],
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        {
-          argsIgnorePattern: "^_", // allow ignoring leading parameters
-        },
-      ],
+      },
+      plugins: {
+        headers: headersPlugin,
+      },
+      rules: {
+        "headers/header-format": [
+          "error",
+          {
+            source: "string",
+            style: "line",
+            content: fileHeader,
+            patterns: {
+              year: {
+                pattern: "\\d{4}",
+                defaultValue: String(new Date().getFullYear()),
+              },
+            },
+            trailingNewlines: 2,
+          },
+        ],
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            argsIgnorePattern: "^_", // allow ignoring leading parameters
+          },
+        ],
+      },
     },
-  },
-]);
+  ]);

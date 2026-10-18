@@ -2,4 +2,4 @@
 
 import { base } from "@muspellheim/eslint-config";
 
-export default base;
+export default base();
