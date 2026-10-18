@@ -1,6 +1,13 @@
 {
   "name": "@muspellheim/stylelint-config",
   "version": "1.0.0",
+  "author": "Falko Schumann",
+  "license": "MIT",
+  "homepage": "https://github.com/falkoschumann/muspellheim-config-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falkoschumann/muspellheim-config-js.git"
+  },
   "type": "module",
   "scripts": {
     "publish": "npm publish --access public",
