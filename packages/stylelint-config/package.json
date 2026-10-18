@@ -1,5 +1,5 @@
 {
-  "name": "@naturheilpraxis/stylelint-config",
+  "name": "@muspellheim/stylelint-config",
   "private": true,
   "type": "module",
   "scripts": {
@@ -24,8 +24,8 @@
     "stylelint": "17.16.0"
   },
   "devDependencies": {
-    "@naturheilpraxis/eslint-config": "*",
-    "@naturheilpraxis/typescript-config": "*",
+    "@muspellheim/eslint-config": "*",
+    "@muspellheim/typescript-config": "*",
     "@types/node": "24.19.1",
     "eslint": "10.12.0",
     "typescript": "6.0.3"
