@@ -1,8 +1,9 @@
 {
   "name": "@muspellheim/vitest-config",
-  "private": true,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "publish": "npm publish --access public",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "check-types": "tsc --build tsconfig.json"

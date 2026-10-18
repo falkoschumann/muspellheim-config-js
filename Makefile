@@ -20,6 +20,9 @@ distclean: clean
 dist: build
 	$(PM) run --workspaces --if-present dist
 
+publish: all
+	$(PM) run --workspaces --if-present publish
+
 check: coverage
 	$(PM) run --workspaces --if-present lint
 	$(PM) run --workspaces --if-present check-types

@@ -1,7 +1,10 @@
 {
   "name": "@muspellheim/typescript-config",
-  "private": true,
+  "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "publish": "npm publish --access public"
+  },
   "files": [
     "README.md",
     "tsconfig.base.json",
