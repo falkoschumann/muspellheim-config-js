@@ -14,7 +14,9 @@ clean:
 	rm -rf node_modules/.cache packages/*/node_modules/.cache
 
 distclean: clean
+	rm -f *.tgz
 	rm -rf packages/*/dist
+	rm -rf packages/*/types
 	rm -rf node_modules packages/*/node_modules
 
 dist: build

@@ -10,6 +10,7 @@
   },
   "type": "module",
   "scripts": {
+    "build": "tsc --project tsconfig.build.json",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "check-types": "tsc --build tsconfig.json"
@@ -30,6 +31,7 @@
     "@muspellheim/eslint-config": "*",
     "@muspellheim/typescript-config": "*",
     "@softarc/sheriff-core": "0.20.0",
+    "@types/node": "24.19.2",
     "eslint": "10.12.0",
     "typescript": "6.0.3"
   }

@@ -8,8 +8,15 @@ import headersPlugin from "eslint-plugin-headers";
 import globals from "globals";
 import ts from "typescript-eslint";
 
+/**
+ * @param {object} [options]
+ * @param {string} [options.fileHeader] the required file header
+ * @param {string} [options.tsconfigRootDir] the root directory of the
+ *   tsconfig.json, usually `import.meta.dirname`
+ */
 export const base = ({
   fileHeader = "Copyright (c) (year) Falko Schumann. MIT license.",
+  tsconfigRootDir = undefined,
 } = {}) =>
   defineConfig([
     globalIgnores([
@@ -19,6 +26,7 @@ export const base = ({
       "coverage-e2e/**",
       "playwright-report/**",
       "test-results/**",
+      "types/**",
     ]),
     {
       extends: [js.configs.recommended, ts.configs.recommended, prettierConfig],
@@ -30,6 +38,7 @@ export const base = ({
           ...globals.browser,
         },
         parserOptions: {
+          tsconfigRootDir,
           ecmaFeatures: {
             jsx: true,
           },

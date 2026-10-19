@@ -43,6 +43,7 @@ target/
 # Build
 build/
 dist/
+types/
 /RELEASE_NOTES.md
 .env.local
 *.log

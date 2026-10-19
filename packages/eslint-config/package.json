@@ -10,19 +10,18 @@
   },
   "type": "module",
   "scripts": {
+    "build": "tsc --project tsconfig.build.json",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "check:types": "tsc --build tsconfig.json"
   },
   "exports": {
-    ".": "./src/mod.js"
+    ".": "./lib/mod.js"
   },
   "files": [
     "README.md",
-    "src/base.js",
-    "src/mod.js",
-    "src/react.js",
-    "src/sheriff.js"
+    "lib",
+    "types"
   ],
   "dependencies": {
     "@eslint/js": "10.0.1",
