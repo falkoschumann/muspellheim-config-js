@@ -10,7 +10,8 @@
   },
   "type": "module",
   "scripts": {
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "pack": "bun pm pack"
   },
   "files": [
     "README.md",

@@ -21,7 +21,14 @@ dist: build
 	$(PM) run --workspaces --if-present dist
 
 publish: all
+ifdef CI
 	$(PM) run --workspaces --if-present publish
+else
+	$(PM) run --workspaces --if-present pack
+endif
+
+publish: all
+
 
 check: coverage
 	$(PM) run --workspaces --if-present lint
@@ -58,6 +65,7 @@ version:
 
 .PHONY: \
 	all clean distclean dist \
+	publish \
 	check fix \
 	test coverage watch \
 	build prepare version

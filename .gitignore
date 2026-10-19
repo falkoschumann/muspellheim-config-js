@@ -54,6 +54,7 @@ dist/
 # Node.js
 coverage/
 node_modules/
+*.tgz
 
 # Python
 .venv/
