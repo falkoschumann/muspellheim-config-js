@@ -22,9 +22,9 @@ dist: build
 
 publish: all
 ifdef CI
-	$(PM) run --workspaces --if-present publish
+	npm publish --workspaces --access public
 else
-	$(PM) run --workspaces --if-present pack
+	npm pack --workspaces
 endif
 
 publish: all

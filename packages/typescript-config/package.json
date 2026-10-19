@@ -9,10 +9,6 @@
     "url": "git+https://github.com/falkoschumann/muspellheim-config-js.git"
   },
   "type": "module",
-  "scripts": {
-    "publish": "npm publish --access public",
-    "pack": "bun pm pack"
-  },
   "files": [
     "README.md",
     "tsconfig.base.json",

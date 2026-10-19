@@ -10,8 +10,6 @@
   },
   "type": "module",
   "scripts": {
-    "publish": "npm publish --access public",
-    "pack": "bun pm pack",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "check:types": "tsc --build tsconfig.json"
