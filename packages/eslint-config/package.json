@@ -16,10 +16,15 @@
     "check:types": "tsc --build tsconfig.json"
   },
   "exports": {
-    ".": "./lib/mod.js"
+    ".": {
+      "import": {
+        "default": "./lib/mod.js",
+        "types": "./types/lib.d.ts"
+      }
+    },
+    "./package.json": "./package.json"
   },
   "files": [
-    "README.md",
     "lib",
     "types"
   ],

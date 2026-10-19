@@ -10,18 +10,23 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsc --project tsconfig.build.json",
+    "build": "tsc --project tsconfig.build.json && bun build src/mod.ts --production --outdir=dist --sourcemap=linked --packages=external",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "check-types": "tsc --build tsconfig.json"
   },
   "exports": {
-    ".": "./src/mod.ts"
+    ".": {
+      "import": {
+        "default": "./dist/mod.js",
+        "types": "./dist/types/mod.d.ts"
+      }
+    },
+    "./package.json": "./package.json"
   },
   "files": [
-    "README.md",
-    "src/base.ts",
-    "src/mod.ts"
+    "dist",
+    "src"
   ],
   "dependencies": {
     "@vitest/coverage-v8": "5.0.5"
