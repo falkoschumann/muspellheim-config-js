@@ -10,16 +10,23 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsc --project tsconfig.build.json && bun build src/mod.ts --production --outdir=dist --sourcemap=linked --packages=external",
+    "build": "tsc --project tsconfig.build.json && bun build src/mod.ts --production --outdir=dist --sourcemap=linked --packages=external && bun build src/mod.ts --production --outdir=dist --sourcemap=linked --packages=external --format=cjs --entry-naming=\"[dir]/[name].cjs\"",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "check-types": "tsc --build tsconfig.json"
   },
+  "main": "./dist/mod.cjs",
+  "module": "./dist/mod.js",
+  "types": "./dist/types/mod.d.ts",
   "exports": {
     ".": {
       "import": {
-        "default": "./dist/mod.js",
-        "types": "./dist/types/mod.d.ts"
+        "types": "./dist/types/mod.d.ts",
+        "default": "./dist/mod.js"
+      },
+      "require": {
+        "types": "./dist/types/mod.d.ts",
+        "default": "./dist/mod.cjs"
       }
     },
     "./package.json": "./package.json"

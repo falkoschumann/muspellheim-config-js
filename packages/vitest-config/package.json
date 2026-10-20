@@ -18,8 +18,8 @@
   "exports": {
     ".": {
       "import": {
-        "default": "./dist/mod.js",
-        "types": "./dist/types/mod.d.ts"
+        "types": "./dist/types/mod.d.ts",
+        "default": "./dist/mod.js"
       }
     },
     "./package.json": "./package.json"
