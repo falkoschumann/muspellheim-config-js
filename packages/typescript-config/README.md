@@ -5,11 +5,11 @@
 
 Some shared TypeScript configurations from my projects:
 
-- `@naturheilpraxis/typescript-config/tsconfig.base.json`
-- `@naturheilpraxis/typescript-config/tsconfig.bun.json`
-- `@naturheilpraxis/typescript-config/tsconfig.electron-preload.json`
-- `@naturheilpraxis/typescript-config/tsconfig.node.json`
-- `@naturheilpraxis/typescript-config/tsconfig.web.json`
+- `@muspellheim/typescript-config/tsconfig.base.json`
+- `@muspellheim/typescript-config/tsconfig.bun.json`
+- `@muspellheim/typescript-config/tsconfig.electron-preload.json`
+- `@muspellheim/typescript-config/tsconfig.node.json`
+- `@muspellheim/typescript-config/tsconfig.web.json`
 
 ## Installation
 
@@ -35,7 +35,7 @@ Create `tsconfig.backend.json`:
 
 ```json
 {
-  "extends": "@naturheilpraxis/typescript-config/tsconfig.node.json",
+  "extends": "@muspellheim/typescript-config/tsconfig.node.json",
   "compilerOptions": {
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.cache/tsconfig.backend.tsbuildinfo"
@@ -48,7 +48,7 @@ Create `tsconfig.frontend.json`:
 
 ```json
 {
-  "extends": "@naturheilpraxis/typescript-config/tsconfig.web.json",
+  "extends": "@muspellheim/typescript-config/tsconfig.web.json",
   "compilerOptions": {
     "composite": true,
     "types": ["vite/client"],

@@ -16,7 +16,7 @@ npm install @muspellheim/stylelint-config
 Create `stylelint.config.js`:
 
 ```typescript
-import { base } from "@naturheilpraxis/stylelint-config";
+import { base } from "@muspellheim/stylelint-config";
 
 export default base;
 ```
@@ -24,7 +24,7 @@ export default base;
 or for SCSS:
 
 ```typescript
-import { scss } from "@naturheilpraxis/stylelint-config";
+import { scss } from "@muspellheim/stylelint-config";
 
 export default scss;
 ```

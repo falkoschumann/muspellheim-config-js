@@ -18,7 +18,7 @@ Create `sheriff.config.ts`:
 ```typescript
 import { type SheriffConfig } from "@softarc/sheriff-core";
 
-import { base } from "@naturheilpraxis/sheriff-config";
+import { base } from "@muspellheim/sheriff-config";
 
 export const config: SheriffConfig = {
   ...base,
@@ -35,7 +35,7 @@ or for multiple components:
 ```typescript
 import { type SheriffConfig } from "@softarc/sheriff-core";
 
-import { components } from "@naturheilpraxis/sheriff-config/components";
+import { components } from "@muspellheim/sheriff-config/components";
 
 export const config: SheriffConfig = {
   ...components,

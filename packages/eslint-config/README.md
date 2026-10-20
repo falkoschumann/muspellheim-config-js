@@ -18,7 +18,7 @@ Create `eslint.config.js`:
 ```typescript
 import { defineConfig } from "eslint/config";
 
-import { base, react, sheriff } from "@naturheilpraxis/eslint-config";
+import { base, react, sheriff } from "@muspellheim/eslint-config";
 
 const config = defineConfig([base, react, sheriff]);
 

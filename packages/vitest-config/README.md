@@ -16,7 +16,7 @@ npm install @muspellheim/vitest-config
 Create `vitest.config.js`:
 
 ```typescript
-import { base } from "@naturheilpraxis/vitest-config";
+import { base } from "@muspellheim/vitest-config";
 import { defineConfig, mergeConfig } from "vitest/config";
 
 export default mergeConfig(
