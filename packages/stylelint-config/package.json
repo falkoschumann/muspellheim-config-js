@@ -19,7 +19,7 @@
     ".": {
       "import": {
         "default": "./lib/mod.js",
-        "types": "./types/lib.d.ts"
+        "types": "./types/mod.d.ts"
       }
     },
     "./package.json": "./package.json"
