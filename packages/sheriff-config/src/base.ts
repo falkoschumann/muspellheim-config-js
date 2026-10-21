@@ -13,6 +13,7 @@ export const base: SheriffConfig = {
   barrelFileName: "mod.ts",
   modules: {
     "src/ui/<element>": ["ui:<element>"],
+    "src/ui": ["layer:ui"],
     "src/<layer>": ["layer:<layer>"],
     src: ["layer:entry"],
   },
