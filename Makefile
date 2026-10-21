@@ -42,10 +42,10 @@ fix:
 	$(PM) run format:fix
 
 test: prepare
-	$(PM) run --workspaces --elide-lines=0 --if-present test
+	$(PM) run --workspaces --if-present test
 
 coverage: prepare
-	$(PM) run --workspaces --elide-lines=0 --if-present test:coverage
+	$(PM) run --workspaces --if-present test:coverage
 
 watch: prepare
 	$(PM) run --parallel --workspaces --if-present test:watch
