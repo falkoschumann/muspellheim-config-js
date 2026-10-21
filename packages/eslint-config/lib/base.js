@@ -12,7 +12,8 @@ import ts from "typescript-eslint";
  * @param {object} [options]
  * @param {string} [options.fileHeader] the required file header
  * @param {string} [options.tsconfigRootDir] the root directory of the
- *   tsconfig.json, usually `import.meta.dirname`
+ *   tsconfig.json, usually `import.meta.dirname`. Recommended when using the
+ *   ESLint plugin for VS Code and a monorepo.
  */
 export const base = ({
   fileHeader = "Copyright (c) (year) Falko Schumann. MIT license.",
