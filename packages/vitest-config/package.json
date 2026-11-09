@@ -28,16 +28,15 @@
     "dist",
     "src"
   ],
-  "peerDependencies": {
-    "vitest": "^5",
-    "@vitest/coverage-v8": "^5"
+  "dependencies": {
+    "vitest": "5.1.0",
+    "@vitest/coverage-v8": "5.1.0"
   },
   "devDependencies": {
     "@muspellheim/eslint-config": "*",
     "@muspellheim/typescript-config": "*",
-    "@types/node": "24.19.2",
+    "@types/node": "26.6.6",
     "eslint": "10.14.0",
-    "typescript": "6.0.3",
-    "vitest": "5.1.0"
+    "typescript": "6.0.3"
   }
 }

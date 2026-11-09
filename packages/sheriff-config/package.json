@@ -35,14 +35,14 @@
     "dist",
     "src"
   ],
-  "peerDependencies": {
-    "@softarc/sheriff-core": "^0.20"
+  "dependencies": {
+    "@softarc/sheriff-core": "0.20.0"
   },
   "devDependencies": {
     "@muspellheim/eslint-config": "*",
     "@muspellheim/typescript-config": "*",
     "@softarc/sheriff-core": "0.20.0",
-    "@types/node": "24.19.2",
+    "@types/node": "26.6.6",
     "eslint": "10.14.0",
     "typescript": "6.0.3"
   }
