@@ -31,7 +31,6 @@ endif
 
 publish: all
 
-
 check: coverage
 	$(PM) run --workspaces --if-present lint
 	$(PM) run --workspaces --if-present check-types
