@@ -10,7 +10,7 @@
     },
     "packages/eslint-config": {
       "name": "@muspellheim/eslint-config",
-      "version": "0.2.4",
+      "version": "0.3.0",
       "dependencies": {
         "@eslint/js": "10.0.1",
         "@softarc/eslint-plugin-sheriff": "0.20.0",
@@ -30,7 +30,7 @@
     },
     "packages/sheriff-config": {
       "name": "@muspellheim/sheriff-config",
-      "version": "0.2.4",
+      "version": "0.3.0",
       "dependencies": {
         "@softarc/sheriff-core": "0.20.0",
       },
@@ -45,7 +45,7 @@
     },
     "packages/stylelint-config": {
       "name": "@muspellheim/stylelint-config",
-      "version": "0.2.4",
+      "version": "0.3.0",
       "dependencies": {
         "stylelint": "18.0.0",
         "stylelint-config-standard": "41.0.0",
@@ -61,11 +61,11 @@
     },
     "packages/typescript-config": {
       "name": "@muspellheim/typescript-config",
-      "version": "0.2.4",
+      "version": "0.3.0",
     },
     "packages/vitest-config": {
       "name": "@muspellheim/vitest-config",
-      "version": "0.2.4",
+      "version": "0.3.0",
       "dependencies": {
         "@vitest/coverage-v8": "5.1.0",
         "vitest": "5.1.0",
