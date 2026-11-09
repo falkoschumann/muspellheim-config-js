@@ -8,14 +8,19 @@ Some shared Stylelint configurations from my projects.
 ## Installation
 
 ```bash
-npm install @muspellheim/stylelint-config
+npm install --save-dev @muspellheim/stylelint-config
 ```
 
 ## Usage
 
+Provided configurations:
+
+- `base`
+- `scss`
+
 Create `stylelint.config.js`:
 
-```typescript
+```javascript
 import { base } from "@muspellheim/stylelint-config";
 
 export default base;
@@ -23,7 +28,7 @@ export default base;
 
 or for SCSS:
 
-```typescript
+```javascript
 import { scss } from "@muspellheim/stylelint-config";
 
 export default scss;

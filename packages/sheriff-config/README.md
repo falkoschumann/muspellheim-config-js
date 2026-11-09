@@ -8,10 +8,15 @@ Some shared Sheriff configurations from my projects.
 ## Installation
 
 ```bash
-npm install @muspellheim/sheriff-config
+npm install --save-dev @muspellheim/sheriff-config
 ```
 
 ## Usage
+
+Provided configurations:
+
+- `base`
+- `components`
 
 Create `sheriff.config.ts`:
 

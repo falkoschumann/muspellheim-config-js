@@ -8,10 +8,16 @@ Some shared ESLint configurations from my projects.
 ## Installation
 
 ```bash
-npm install @muspellheim/eslint-config
+npm install --save-dev @muspellheim/eslint-config
 ```
 
 ## Usage
+
+Provided configurations:
+
+- `base`
+- `react`
+- `sheriff`
 
 Create `eslint.config.js`:
 

@@ -8,12 +8,28 @@ Some shared Vitest configurations from my projects.
 ## Installation
 
 ```bash
-npm install @muspellheim/vitest-config
+npm install --save-dev @muspellheim/vitest-config
 ```
 
 ## Usage
 
-Create `vitest.config.js`:
+Provided configurations:
+
+- `base`
+- `web`
+
+Create `vitest.config.ts` or `vitest.config.js` ...
+
+Example 1:
+
+```typescript
+import { base, web } from "@muspellheim/vitest-config";
+import { defineConfig, mergeConfig } from "vitest/config";
+
+export default mergeConfig(base, web);
+```
+
+Example 2:
 
 ```typescript
 import { base } from "@muspellheim/vitest-config";
