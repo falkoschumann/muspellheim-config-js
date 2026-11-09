@@ -1,6 +1,6 @@
 {
   "name": "@muspellheim/stylelint-config",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "Falko Schumann",
   "license": "MIT",
   "homepage": "https://github.com/falkoschumann/muspellheim-config-js",
@@ -29,8 +29,8 @@
     "types"
   ],
   "dependencies": {
-    "stylelint": "18.0.0",
-    "stylelint-config-standard": "41.0.0",
+    "stylelint": "17.16.0",
+    "stylelint-config-standard": "40.0.0",
     "stylelint-config-standard-scss": "17.0.0"
   },
   "devDependencies": {
