@@ -26,7 +26,7 @@ import { defineConfig } from "eslint/config";
 
 import { base, react, sheriff } from "@muspellheim/eslint-config";
 
-const config = defineConfig([base, react, sheriff]);
+const config = defineConfig([base(), react, sheriff]);
 
 export default config;
 ```
