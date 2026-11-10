@@ -9,6 +9,10 @@ Some shared Vitest configurations from my projects.
 
 ```bash
 npm install --save-dev @muspellheim/vitest-config
+
+# add peer dependencies
+npm install --save-dev vitest@5
+npm install --save-dev @vitest/coverage-v8@5
 ```
 
 ## Usage

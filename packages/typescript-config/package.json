@@ -16,5 +16,8 @@
     "tsconfig.electron-preload.json",
     "tsconfig.node.json",
     "tsconfig.web.json"
-  ]
+  ],
+  "peerDependencies": {
+    "typescript": "^6"
+  }
 }

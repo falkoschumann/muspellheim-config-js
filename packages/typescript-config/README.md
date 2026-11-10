@@ -15,6 +15,9 @@ Some shared TypeScript configurations from my projects:
 
 ```bash
 npm install @muspellheim/typescript-config
+
+# add peer dependencies
+npm install --save-dev typescript@6
 ```
 
 ## Usage

@@ -9,6 +9,9 @@ Some shared Sheriff configurations from my projects.
 
 ```bash
 npm install --save-dev @muspellheim/sheriff-config
+
+# add peer dependencies
+npm install --save-dev @softarc/sheriff-core
 ```
 
 ## Usage

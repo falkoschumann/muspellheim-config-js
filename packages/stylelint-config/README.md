@@ -9,6 +9,9 @@ Some shared Stylelint configurations from my projects.
 
 ```bash
 npm install --save-dev @muspellheim/stylelint-config
+
+# add peer dependencies
+npm install --save-dev stylelint@17
 ```
 
 ## Usage

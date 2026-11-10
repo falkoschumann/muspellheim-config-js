@@ -28,8 +28,10 @@
     "lib",
     "types"
   ],
+  "peerDependencies": {
+    "stylelint": "^17"
+  },
   "dependencies": {
-    "stylelint": "17.16.0",
     "stylelint-config-standard": "40.0.0",
     "stylelint-config-standard-scss": "17.0.0"
   },
@@ -37,6 +39,7 @@
     "@muspellheim/eslint-config": "*",
     "@muspellheim/typescript-config": "*",
     "@types/node": "26.6.6",
+    "stylelint": "17.16.0",
     "eslint": "10.14.0",
     "typescript": "6.0.3"
   }

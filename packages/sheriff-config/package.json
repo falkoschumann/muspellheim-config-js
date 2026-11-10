@@ -35,8 +35,8 @@
     "dist",
     "src"
   ],
-  "dependencies": {
-    "@softarc/sheriff-core": "0.20.0"
+  "peerDependencies": {
+    "@softarc/sheriff-core": "^0.20"
   },
   "devDependencies": {
     "@muspellheim/eslint-config": "*",

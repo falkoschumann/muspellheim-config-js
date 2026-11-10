@@ -9,6 +9,10 @@ Some shared ESLint configurations from my projects.
 
 ```bash
 npm install --save-dev @muspellheim/eslint-config
+
+# add peer dependencies
+npm install --save-dev eslint@10
+npm install --save-dev typescript@6
 ```
 
 ## Usage

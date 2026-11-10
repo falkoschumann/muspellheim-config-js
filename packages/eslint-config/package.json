@@ -28,20 +28,24 @@
     "lib",
     "types"
   ],
+  "peerDependencies": {
+    "eslint": "^10",
+    "typescript": "^6"
+  },
   "dependencies": {
     "@eslint/js": "10.0.1",
     "@softarc/eslint-plugin-sheriff": "0.20.0",
-    "eslint": "10.14.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-headers": "1.3.5",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "7.1.1",
     "globals": "17.14.0",
-    "typescript": "6.0.3",
     "typescript-eslint": "8.72.2"
   },
   "devDependencies": {
     "@muspellheim/typescript-config": "*",
-    "@types/node": "26.6.6"
+    "@types/node": "26.6.6",
+    "eslint": "10.14.0",
+    "typescript": "6.0.3"
   }
 }
