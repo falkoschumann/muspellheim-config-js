@@ -13,7 +13,7 @@
     "build": "tsc --project tsconfig.build.json",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "check:types": "tsc --build tsconfig.json"
+    "check-types": "tsc --build tsconfig.json"
   },
   "exports": {
     ".": {
