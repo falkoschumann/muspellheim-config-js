@@ -9,6 +9,6 @@ export const sheriff = defineConfig([
       sheriffPlugin.configs.all
     ),
     files: ["**/*.{js,jsx,ts,tsx}"],
-    ignores: ["**/*.test.*"],
+    ignores: ["test/**", "**/*.test.*"],
   },
 ]);
