@@ -4,7 +4,7 @@ import {
   noDependencies,
   sameTag,
   type SheriffConfig,
-} from "@softarc/sheriff-core";
+} from "@sheriff-arch/sheriff-core";
 
 export const components: SheriffConfig = {
   autoTagging: false,

@@ -11,7 +11,7 @@ Some shared Sheriff configurations from my projects.
 npm install --save-dev @muspellheim/sheriff-config
 
 # add peer dependencies
-npm install --save-dev @softarc/sheriff-core
+npm install --save-dev @sheriff-arch/sheriff-core
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ Provided configurations:
 Create `sheriff.config.ts`:
 
 ```typescript
-import { type SheriffConfig } from "@softarc/sheriff-core";
+import { type SheriffConfig } from "@sheriff-arch/sheriff-core";
 
 import { base } from "@muspellheim/sheriff-config";
 
@@ -41,7 +41,7 @@ export const config: SheriffConfig = {
 or for multiple components:
 
 ```typescript
-import { type SheriffConfig } from "@softarc/sheriff-core";
+import { type SheriffConfig } from "@sheriff-arch/sheriff-core";
 
 import { components } from "@muspellheim/sheriff-config/components";
 

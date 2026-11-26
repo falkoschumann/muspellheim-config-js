@@ -36,12 +36,12 @@
     "src"
   ],
   "peerDependencies": {
-    "@softarc/sheriff-core": "^0.20"
+    "@sheriff-arch/sheriff-core": "^0.20"
   },
   "devDependencies": {
     "@muspellheim/eslint-config": "*",
     "@muspellheim/typescript-config": "*",
-    "@softarc/sheriff-core": "0.20.0",
+    "@sheriff-arch/sheriff-core": "0.21.1",
     "@types/node": "26.6.6",
     "eslint": "10.15.0",
     "typescript": "6.0.3"
