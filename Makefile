@@ -1,3 +1,5 @@
+LEVEL ?= minor
+
 # JavaScript configuration
 JS := bun
 PM := bun
@@ -22,14 +24,17 @@ distclean: clean
 dist: build
 	$(PM) run --workspaces --if-present dist
 
+bump:
+	for dir in packages/*/; do \
+		(cd "$$dir" && bun pm version $(LEVEL) --no-git-tag-version) \
+	done
+
 publish: all
 ifdef CI
 	npm publish --workspaces --access public
 else
 	npm pack --workspaces
 endif
-
-publish: all
 
 check: coverage
 	$(PM) run --workspaces --if-present lint
@@ -66,7 +71,7 @@ version:
 
 .PHONY: \
 	all clean distclean dist \
-	publish \
+	bump publish \
 	check fix \
 	test coverage watch \
 	build prepare version
